@@ -22,8 +22,12 @@ the TL;DR instructions are just:
 
 * 'npm install -g fh-fhc'
 
+to test FHC installed properly type:
 
-### Install git 
+* 'fhc -v'
+
+
+### Install git
 We will use a few git commands directly in some of the advanced labs.  Please make sure git is installed on your system.  You can download the [latest version here][4].
 
 ### Create a Github account
