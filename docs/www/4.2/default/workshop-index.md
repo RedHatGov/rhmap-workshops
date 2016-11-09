@@ -11,6 +11,8 @@ html_title: Workshops
 
 ### [Login and Tour of Red Hat Mobile Application Platform](workshop-introduction.html)
 
+### [Working with SCM](lab-working-with-scm.html)
+
 <!--
 ### [Lab: XXX](workshop-labX-XXX.html)
 
