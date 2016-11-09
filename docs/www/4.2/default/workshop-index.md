@@ -13,6 +13,9 @@ html_title: Workshops
 
 ### [Gettig Started using the web console](a-tour-of-the-webconsole.html)
 
+### [Working with SCM](lab-working-with-scm.html)
+>>>>>>> upstream/master
+
 <!--
 ### [Lab: XXX](workshop-labX-XXX.html)
 
