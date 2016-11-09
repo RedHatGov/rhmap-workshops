@@ -11,6 +11,8 @@ html_title: Workshops
 
 ### [Login and Tour of Red Hat Mobile Application Platform](workshop-introduction.html)
 
+### [Gettig Started using the web console](a-tour-of-the-webconsole.html)
+
 <!--
 ### [Lab: XXX](workshop-labX-XXX.html)
 
