@@ -9,7 +9,7 @@ html_title: Workshops
 
 ### [Setup Prerequisites](workshop-prerequisites.html)
 
-### MORE LABS COMING SOON!
+### [Login and Tour of Red Hat Mobile Application Platform](workshop-introduction.html)
 
 <!--
 ### [Lab: XXX](workshop-labX-XXX.html)
