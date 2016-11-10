@@ -1,8 +1,8 @@
 ---
 layout: lab
-title: A Guided Tour of Red Hat Mobile Application Platform
-subtitle: Welcome to Red Hat Mobile Application Platform
-html_title: Welcome to Red Hat Mobile Application Platform
+title: Getting Started Using the Web Console
+subtitle: Understanding how to navigate the web console
+html_title: Getting started using the web console
 categories: [lab, intro, welcome, developers, ops]
 ---
 
