@@ -11,6 +11,10 @@ html_title: Workshops
 
 ### [Login and Tour of Red Hat Mobile Application Platform](workshop-introduction.html)
 
+### [Getting Started using the web console](a-tour-of-the-webconsole-xamarin.html)
+
+### [Modifying a Cloud App & Node.JS](a-tour-of-the-webconsole-cloud-app.html)
+
 ### [Working with SCM](lab-working-with-scm.html)
 
 <!--
