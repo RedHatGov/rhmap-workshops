@@ -18,6 +18,8 @@ html_title: Workshops
 ### [Working with SCM](lab-working-with-scm.html)
 
 ### [Creating a Xamarin sync project](lab-working-with-xamarin.html)
+
+### [Drag and Drop Apps](drag-and-drop-apps.html)
 <!--
 ### [Lab: XXX](workshop-labX-XXX.html)
 

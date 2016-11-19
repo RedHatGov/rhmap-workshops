@@ -7,7 +7,7 @@ html_title: Workshops Labs
 
 # Master List
 
-<!-- USE THESE AS A START TO ADD CONTENT TO YOUR WORKSHOP 
+<!-- USE THESE AS A START TO ADD CONTENT TO YOUR WORKSHOP
 	WHEN YOU ADD THEM, MAKE SURE TO INCLUDE PREVIOUS LABS BEING
 	BUILT UPON, OR UPDATE THE TEXT TO ADD MISSING SETUP STEPS
 
@@ -38,7 +38,7 @@ COMING SOON!  Build a Cordova application in RHMAP. Based on http://developerblo
 ## unit-testing-your-code.md
 COMING SOON! Setup unit tests and learn the benefits of CI/CD for you mobile apps and mBaaS services.
 
-## forms-app-creation.md
+## drag-and-drop-apps.md
 COMING SOON!  Need to develop an app quickly?  Want to prototype before investing?  This lab walks you through how quick you can develop an app with RHMAP's form builder capability.
 
 ## offline-access-and-data-sync.md
@@ -52,4 +52,3 @@ COMING SOON!  How to organize your users into teams and provide access via RBAC.
 
 ## TBD.md
 COMING SOON!  TBD
-
