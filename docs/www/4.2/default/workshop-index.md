@@ -17,6 +17,7 @@ html_title: Workshops
 
 ### [Working with SCM](lab-working-with-scm.html)
 
+### [Creating a Xamarin sync project](lab-working-with-xamarin.html)
 <!--
 ### [Lab: XXX](workshop-labX-XXX.html)
 
