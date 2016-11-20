@@ -17,6 +17,17 @@ html_title: Workshops
 
 ### [Working with SCM](lab-working-with-scm.html)
 
+### [Creating a Xamarin sync project](lab-working-with-xamarin.html)
+
+### [Creating your own mBaaS Service](nodejs_weather_module.html)
+
+### [Drag and Drop Apps](drag-and-drop-apps.html)
+
+### [App & Cloud statistics](apps-and-cloud-statistics.html)
+
+### [Administration & Management](administration-and-management.html)
+
+
 <!--
 ### [Lab: XXX](workshop-labX-XXX.html)
 
