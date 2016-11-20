@@ -76,7 +76,7 @@ For this part of the lab we will create a Cordova application to easily walk thr
 1. The app details page shows information about your client app.  It has information such as the name, a Description, and the ID's which will be used later.  Since this is a Cordova application, which is HTML5, CSS, & JavaScript, we can preview the application in the browser.
 <img src="{{ site.baseurl }}/www/4.2/default/screenshots/rhmap-clientappdetails.png" width="600"/><br/>
 
-2. Test the app by inputing some text in the app on the right and selecting **Say Hello From The Cloud**
+2. Test the app by inputting some text in the app on the right and selecting **Say Hello From The Cloud**
 
 ##Building the Client App
 

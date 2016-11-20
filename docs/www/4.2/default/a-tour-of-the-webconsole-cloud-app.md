@@ -32,41 +32,56 @@ This area lets you edit the source code of any file in the Git repository of the
 ## Editing the Cloud App
 Now that we have navigated to the studio's editor lets explore what has been created for you already.  *application.js* is the starting point of the cloud app and contains the definitions to all the endpoints that are created.  The *test* folder has pre-generated acceptance testing for the application.  Finally, The *lib* folder has all the endpoints already created.  We will be modifying the default endpoint in this section.
 
-1. Open *applicaion.js*.<br />
+Open *applicaion.js*.<br />
 *application.js* handles all requests to the cloud app. The client app sends requests to the */hello* endpoint and the *application.js* file routes those requests to another file called *hello.js*.<br /><br />
 To learn more about routing Express, which we use for routing in our templates, visit the [Express documentation website](http://expressjs.com/en/4x/api.html#express.router).
 
-2. Open *lib/hello.js*.
+Open *lib/hello.js*.
 
-3. Add a timestamp to the response object. <br/>
-Find this line(17 & 28):
-```
+Add a timestamp to the response object. <br/>
+<blockquote>
+<i class="fa"></i> Find this line(17 & 28):
+</blockquote>
+{% highlight JavaScript %}
 res.json({msg: 'Hello ' + world});
-```
-Change that line to the following:
-```
+{% endhighlight %}
+
+<blockquote>
+<i class="fa"></i> Change that line to the following:
+</blockquote>
+{% highlight JavaScript %}
 res.json({msg: 'Hello ' + world, timestamp: new Date().getTime() });
-```
-The GET handler should now look like:
-```
+{% endhighlight %}
+
+<blockquote>
+<i class="fa"></i> The GET handler should now look like:
+</blockquote>
+{% highlight JavaScript %}
 hello.get('/', function(req, res) {
   console.log(new Date(), 'In hello route POST / req.body=', req.body);
   var world = req.body && req.body.hello ? req.body.hello : 'World';
   // see http://expressjs.com/4x/api.html#res.json
   res.json({msg: 'Hello ' + world, timestamp: new Date().getTime() });
 });
-```
-The POST handler should now look like:
-```
+{% endhighlight %}
+
+<blockquote>
+<i class="fa"></i> The POST handler should now look like:
+</blockquote>
+{% highlight JavaScript %}
 hello.post('/', function(req, res) {
   console.log(new Date(), 'In hello route POST / req.body=', req.body);
   var world = req.body && req.body.hello ? req.body.hello : 'World';
   // see http://expressjs.com/4x/api.html#res.json
   res.json({msg: 'Hello ' + world, timestamp: new Date().getTime() });
 });
-```
-Feel free to copy this code and overwrite the whole file:
-```
+{% endhighlight %}
+
+<blockquote>
+<i class="fa"></i> Feel free to copy this code and overwrite the whole file:
+</blockquote>
+{% highlight JavaScript %}
+
 var express = require('express');
 var bodyParser = require('body-parser');
 var cors = require('cors');
@@ -95,13 +110,14 @@ function helloRoute() {
     return hello;
 }
 module.exports = helloRoute;
-```
-4. Save your changes by clicking **File > Save** in the editor. <br />
+{% endhighlight %}
+
+Save your changes by clicking **File > Save** in the editor. <br />
 The changes are saved to the Git repository of the cloud app. To propagate the changes to the running instance, you must re-deploy the cloud app.
 
-5. Click **Deploy** on the sidebar on the left.
+Click **Deploy** on the sidebar on the left.
 
-6. Click **Deploy Cloud App**. <br />
+Click **Deploy Cloud App**. <br />
 You will now be able to see the timestamp on the client app.
 
 ## Summary
