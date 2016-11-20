@@ -18,6 +18,7 @@ We will be using the following terms throughout the workshop labs so here are so
 * Cloud App - Applications deployed in the MBaaS that handle requests from client apps and communicate with other internal or external systems.
 * MBaaS Service - Reusable services used by cloud apps and shared across multiple projects.
 * FHC - FeedHenry Command Line tool used to access the platform.  
+* Studio - The Red Hat Mobile Application Platform's web interface used to help developers and operations work together to build mobile apps.  
 
 ## Accessing Red Hat Mobile Application Platform
 Red Hat Mobile Application Platform or RHMAP provides a web console that allow you to perform various tasks via a web browser.  Additionally, you can utilize a command line tool to perform tasks.  Let's get started by logging into both of these and checking the status of the platform.
@@ -54,4 +55,4 @@ You can view a list of projects you have access to:
 *fhc projects list*
 
 ## What's coming up
-To get started with Red Hat Mobile Application Platform (RHMAP) quickly, the first step is to understand the project life cycle. This involves creating a project, creating a client and a cloud app from templates, deploying the cloud app to the MBaaS, building the client app, and deploying it to a mobile device.
+To get started with Red Hat Mobile Application Platform (RHMAP) quickly, the first step is to understand the project life cycle. This involves creating a project, creating a client and a cloud app from templates, deploying the cloud app to the MBaaS, building the client app, and deploying it to a mobile device.  We will learn about Node.js and do a little development with it.  

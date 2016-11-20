@@ -20,8 +20,11 @@ Create a copy of this or customize to tailor a workshop to your audience
 ## workshop-lab-prerequisites.md
 How to install the prerequisites
 
-## a-tour-of-the-webconsole.md
+## a-tour-of-the-webconsole-xamarin.md
 Basics of the RHMAP webconsole.
+
+## a-tour-of-the-webconsole-cloud-app.md
+Basics of the RHMAP webconsole to work with cloud apps.
 
 ## a-tour-of-the-cli.md
 Basics of the RHMAP command line interface.  And setting up for SSH access.
