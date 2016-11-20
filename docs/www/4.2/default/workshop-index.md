@@ -20,6 +20,9 @@ html_title: Workshops
 ### [Creating a Xamarin sync project](lab-working-with-xamarin.html)
 
 ### [Drag and Drop Apps](drag-and-drop-apps.html)
+
+### [App & Cloud statistics](apps-and-cloud-statistics.html)
+
 <!--
 ### [Lab: XXX](workshop-labX-XXX.html)
 
