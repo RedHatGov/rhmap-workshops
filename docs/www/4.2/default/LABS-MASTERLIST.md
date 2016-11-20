@@ -21,16 +21,16 @@ Create a copy of this or customize to tailor a workshop to your audience
 How to install the prerequisites
 
 ## a-tour-of-the-webconsole.md
-COMING SOON!  Basics of the RHMAP webconsole.
+Basics of the RHMAP webconsole.
 
 ## a-tour-of-the-cli.md
-COMING SOON!  Basics of the RHMAP command line interface.  And setting up for SSH access.
+Basics of the RHMAP command line interface.  And setting up for SSH access.
 
 ## a-tour-of-the-api.md
 COMGIN SOON!  Basic tour around the capability within the mBaaS APIs.
 
 ## working-with-scm.md
-COMING SOON! Setting up and working with the secure source control repo within RHMAP.
+Setting up and working with the secure source control repo within RHMAP.
 
 ## building-your-first-app.md
 COMING SOON!  Build a Cordova application in RHMAP. Based on http://developerblog.redhat.com/2016/02/17/apps-101-an-absolute-beginners-guide-to-building-a-mobile-app/?_ga=1.76689104.416953934.1443097943
@@ -39,7 +39,7 @@ COMING SOON!  Build a Cordova application in RHMAP. Based on http://developerblo
 COMING SOON! Setup unit tests and learn the benefits of CI/CD for you mobile apps and mBaaS services.
 
 ## drag-and-drop-apps.md
-COMING SOON!  Need to develop an app quickly?  Want to prototype before investing?  This lab walks you through how quick you can develop an app with RHMAP's form builder capability.
+Need to develop an app quickly?  Want to prototype before investing?  This lab walks you through how quick you can develop an app with RHMAP's form builder capability.
 
 ## offline-access-and-data-sync.md
 COMING SOON!  Access app data when disconnected from the network, continue to use your app, and re-sync new changes when the network is reconnected.  This lab walks you through editing an example app to leverage this powerful mBaaS API capability.

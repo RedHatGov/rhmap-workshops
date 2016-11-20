@@ -1,4 +1,5 @@
 ---
+layout: workshop
 title: Working with SCM
 subtitle: Who knew git was so easy
 html_title: Working with SCM

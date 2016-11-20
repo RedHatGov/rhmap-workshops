@@ -54,7 +54,7 @@ hello.post('/', function(req, res) {
 4. Save your changes by clicking **File > Save** in the editor. <br />
 The changes are saved to the Git repository of the cloud app. To propagate the changes to the running instance, you must re-deploy the cloud app.
 
-5. Click **Deploy** on the sidebar on the left.
+5. Click **Deploy** on the sidebar on the left.  By default this workshop's environment is configured to not automatically deploy apps or services.  All cloud apps and services in today's workshop will have to manually deployed.
 
 6. Click **Deploy Cloud App**. <br />
-You wil now be able to see the timestamp on the client app.
+You will now be able to see the timestamp on the client app.
