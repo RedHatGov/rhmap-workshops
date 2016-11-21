@@ -29,6 +29,9 @@ to test FHC installed properly type:
 
 ### Install git
 We will use a few git commands directly in some of the advanced labs.  Please make sure git is installed on your system.  You can download the [latest version here][4].
+```
+Note: Windows users will need to install git bash to follow along with these labs
+```
 
 ### Create a Github account
 Create a FREE github account by going [to this link][5] and following their instructions.

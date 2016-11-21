@@ -17,7 +17,9 @@ html_title: Workshops
 
 ### [Working with SCM](lab-working-with-scm.html)
 
+<!--
 ### [Creating a Xamarin sync project](lab-working-with-xamarin.html)
+-->
 
 ### [Introduction to Cloud App APIs](a-tour-of-the-cloud-apis.html)
 

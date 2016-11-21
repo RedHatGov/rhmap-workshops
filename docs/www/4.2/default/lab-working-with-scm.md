@@ -79,104 +79,96 @@ $ fhc keys ssh
 ### Now let's check out some source code!
 We are going to clone the client app from the previous labs here. To begin we need to find the ID of the project we created so we can clone it using the command line tools.  We can do this through the command line or the web browser.  
 
-<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingOne">
-      <div class="panel-title">
-        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          CLI Steps
-        </a>
-      </div>
-    </div>
-    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-      <div class="panel-body">
-        <i class="fa fa-terminal"></i> Goto the terminal and type the following:
-        {% highlight csh %}$ fhc projects{% endhighlight %}
-        Find your project and the ID associated with it.  Copy that ID.  
-        <img src="{{ site.baseurl }}/www/4.2/default/screenshots/rhmap-terminal-projectlist.png" width="600"/><br/>
+**CLI Steps(option 1)**<br />
+<blockquote>
+<i class="fa fa-terminal"></i> Goto the terminal and type the following
+</blockquote>
+{% highlight csh %}
+$ fhc projects
+{% endhighlight %}
+Find your project and the ID associated with it.  Copy that ID.  
+<img src="{{ site.baseurl }}/www/4.2/default/screenshots/rhmap-terminal-projectlist.png" width="600"/><br/>
 
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingTwo">
-      <div class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Web Console Steps
-        </a>
-      </div>
-    </div>
-    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-      <div class="panel-body">
-        We need to get the project ID to clone the git repository to our local environment.  This is located in the web console when inside a project.<br />
-        1. Navigate to your project.  <br />
-        2. Select the <b>Settings</b> button.<br />
-        3. Copy the <i>Project ID</i><br /><br />
+**Web Console Steps(option 2)**<br />
+We need to get the project ID to clone the git repository to our local environment.  This is located in the web console when inside a project.<br />
 
-        <img src="{{ site.baseurl }}/www/4.2/default/screenshots/rhmap-projectsettings.png" width="600"/><br/>
-        <i>Project Settings page</i>
+Navigate to your project.
 
-      </div>
-    </div>
-  </div>
-</div>
+Select the **Settings** button.
 
+Copy the *Project ID*
+<img src="{{ site.baseurl }}/www/4.2/default/screenshots/rhmap-projectsettings.png" width="600"/><br/>
+*Project Settings page*
 
+### Cloning the Code
 Once we have the project ID, we can pull clone the code from the git repository within the platform.  We will start by Creating a folder where you would like to work out of.
 
-//TODO: Windows/RHEL steps
-
-inside that folder type the following:
+Inside that folder type the following:
 {% highlight csh %}$ fhc projects clone <project ID>{% endhighlight %}
 This will copy the entirety of the project into the folder this is where you will work from when developing locally.
 
-`` You can also clone an individual app, whether that is a client app, cloud app, or MBaaS Service with the command
-'fhc clone <project ID> <app ID>'  ``
+```
+NOTE: You can also clone an individual app, whether that is a client app,
+cloud app or MBaaS Service with the command:
+
+    fhc clone <project ID> <app ID>
+```
 
 
 ### Editing source code
 Now that we have pulled down the code from the platform to our local environment we can modify the code using any editor we would like.
 
-1. Lets navigate to the cloud app<br />
-TODO: windows/linux<br /><br />
-```
+First we have to navigate to the cloud app.  
+<blockquote>
+<i class="fa fa-terminal"></i> Goto the terminal and type the following
+</blockquote>
+{% highlight csh %}
 $ cd <cloud app name>
-```
+{% endhighlight %}
 
-2. navigate to *www/index.html*
 
-3. Open the file in the editor of your choice.  Notepad or VIM
+Navigate to *www/index.html*
 
-4. Add a new *<div>* that will show the received *timestamp*.<br />
+Open the file in the editor of your choice.  Notepad, VI, etc.
+
+We will now add a new *<div>* that will show the received *timestamp*.<br />
 This element acts as a placeholder for the received value.<br />
-Find this line:
-
-```
+<blockquote>
+<i class="fa"></i> Find this line:
+</blockquote>
+{% highlight HTML %}
 <div id="cloudResponse" class="cloudResponse"></div>
-```
+{% endhighlight %}
 
-add a new *<div>* to get the following:
-```
+<blockquote>
+<i class="fa"></i> Add a new &lt;div&gt; to get the following:
+</blockquote>
+{% highlight HTML %}
 <div id="cloudResponse" class="cloudResponse"></div>
 <div id="timestamp" class="cloudResponse"></div>
-```
+{% endhighlight %}
 
-5. Save the file.
+Save the file.
 
-6. Open the www/hello.js file in the editor.
+Open the *www/hello.js* file in the editor.
 
 This file contains a click handler for the Say Hello From The Cloud button, which uses the $fh.cloud API to call the /hello endpoint of the cloud app and populates the placeholder <div id="timestamp"> element.
 Set the placeholder to the received timestamp value.
 
-Find the following code:
-```
-document.getElementById('cloudResponse').innerHTML = "<p>" + res.msg + "</p>";
-```
-Replace it with the following:
-```
+<blockquote>
+<i class="fa"></i> Find the following code:
+</blockquote>
+{% highlight JavaScript %}
+ document.getElementById('cloudResponse').innerHTML = "<p>" + res.msg + "</p>";
+{% endhighlight %}
+
+<blockquote>
+<i class="fa"></i> Replace it with the following:
+</blockquote>
+{% highlight JavaScript %}
 document.getElementById('cloudResponse').innerHTML = "<p>" + res.msg + "</p>";
 document.getElementById('timestamp').innerHTML = "<p>" + res.timestamp + "</p>";
-```
+{% endhighlight %}
 Save your changes.
 
 
@@ -184,11 +176,14 @@ Save your changes.
 Now that we have modified the code we need to push the code up to the git repository.
 
 
-Type the following in the command line:
-```
+<blockquote>
+<i class="fa fa-terminal"></i> Type the following in the terminal:
+</blockquote>
+{% highlight csh %}
 git commit -am"Updating timestamp in my cordova app"
 git push
-```
+{% endhighlight %}
+
 
 8. check the editor in the web client to see if the changes have been pushed.  You will need to refresh the editor if you had it open.  You can also access to the in browser preview to see your changes live without downloading the app.
 
