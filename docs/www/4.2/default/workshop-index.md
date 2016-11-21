@@ -19,6 +19,8 @@ html_title: Workshops
 
 ### [Creating a Xamarin sync project](lab-working-with-xamarin.html)
 
+### [Introduction to Cloud App APIs](a-tour-of-the-cloud-apis.html)
+
 ### [Creating your own mBaaS Service](nodejs_weather_module.html)
 
 ### [Drag and Drop Apps](drag-and-drop-apps.html)

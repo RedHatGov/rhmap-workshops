@@ -26,8 +26,8 @@ Basics of the RHMAP webconsole.
 ## a-tour-of-the-cli.md
 Basics of the RHMAP command line interface.  And setting up for SSH access.
 
-## a-tour-of-the-api.md
-COMGIN SOON!  Basic tour around the capability within the mBaaS APIs.
+## a-tour-of-the-cloud-api.md
+Basic tour around the capability within the mBaaS APIs.
 
 ## working-with-scm.md
 Setting up and working with the secure source control repo within RHMAP.
