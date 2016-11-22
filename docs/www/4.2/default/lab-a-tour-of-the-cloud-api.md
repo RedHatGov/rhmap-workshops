@@ -1,8 +1,8 @@
 ---
 layout: lab
-title: A Guided Tour of Red Hat Mobile Application Platform
+title: A Brief Tour of the Cloud API
 subtitle: 
-html_title: Welcome to Red Hat Mobile Application Platform
+html_title: A brief tour of the cloud API
 categories: [lab, developers, api, cloud]
 ---
 
@@ -10,7 +10,7 @@ categories: [lab, developers, api, cloud]
 
 This lab introduces the cloud app APIs that enable accelerated solution development.  For this introduction we won't be doing any actualy coding, but you will see some pre-written code to give you an idea of what the API calls look like.  Keep in mind that these APIs are the ones you would use in your node.js cloud apps, not in mobile front-end code.  However, there is also a set of mobile client APIs that we will cover in another lab.
 
-## List of current cloud APIs
+## List of current Cloud APIs
 
 We will get into a few specific examples, but first, here's a quick summary of the currently available cloud API calls:
 
@@ -58,15 +58,63 @@ $fh.db(options, function (err, data) {
 {% endhighlight %}
 
 ## Example of fh.push
-Push notifications can be a powerful part of mobile solutions.
-TBD
+Push notifications can be a powerful part of mobile solutions.  It works by embedding logic in your cloud apps to send notifications to mobile devices.  The syntax for using this API call is as follows:
+
+{% highlight JavaScript %}
+$fh.push(message, options, callback(err, res))
+{% endhighlight %}
+
+A basic notification can include message text, alert sound, badge number, user data.  The notifications can be broadcast to all connected apps or [filtered to a subset][2] of connected apps (e.g. by device type or category).
+
+Here is an example of pushing a notification to all mobile apps:
+
+{% highlight JavaScript %}
+var message = {
+  alert: "hello from FH"
+}, options = {
+    broadcast: true
+};
+
+$fh.push(message, options,
+  function (err, res) {
+    if (err) {
+      console.log(err.toString());
+    } else {
+      console.log("status : " + res.status);
+    }
+  });
+{% endhighlight %}
 
 ## Exmaple of fh.service
-TBD
+Maybe most useful here is the ability to make calls into re-uasble MBaaS services.  Because calls to these services are protected, you will need to use this API call in order to get access.  The syntax is as follows:
+
+{% highlight JavaScript %}
+$fh.service(options, callback);
+{% endhighlight %}
+
+The use of the fh.serice call is powerful because it abstracts away the complexity of microservice discovery and authentication from you.  By simply knowing the guid of the service you are trying to talk to (and having configured the service to accept requests from you using the web UI) you can talk to it.  The source code can operate without knowledge of any deployment details, infrastructure, IP addresses, load balancing, or other platform handled pieces of the puzzle.  Pretty easy right?  Here's an example of a service call:
+
+{% highlight JavaScript %}
+$fh.service({
+  "guid" : "0123456789abcdef01234567", // The 24 character unique id of the service
+  "path": "/hello", //the path part of the url excluding the hostname - this will be added automatically
+  "method": "POST",   //all other HTTP methods are supported as well. for example, HEAD, DELETE, OPTIONS
+  "params": { "hello": "world" }, //data to send to the server - same format for GET or POST
+  "timeout": 25000, // timeout value specified in milliseconds. Default: 60000 (60s)
+  "headers" : {} // Custom headers to add to the request. These will be appended to the default headers
+}, function(err, body, res) {
+  console.log('statuscode: ', res && res.statusCode);
+  if ( err ) { console.log('service call failed - err : ', err); }
+  else { console.log('Got response from service - status body : ', res.statusCode, body); }
+});
+{% endhighlight %}
 
 ## Summary
-You should now have a basic understanding of what cloud API calls are available.  We will leverage some of these calls in advanced workshop labs.  You can find the official Red Hat documentation on these [cloud API calls here][1].
+You should now have a basic understanding of what Cloud API calls are available and what using them looks like.  We will leverage some of these calls in upcoming workshop labs.  You can find the official Red Hat documentation on these [Cloud API calls here][1].
 
 [1]: https://access.redhat.com/documentation/en/red-hat-mobile-application-platform/4.2/paged/cloud-api/
+[2]: https://access.redhat.com/documentation/en/red-hat-mobile-application-platform/4.2/single/product-features/#sending-notifications
+[3]: https://access.redhat.com/documentation/en/red-hat-mobile-application-platform/4.2/paged/client-api/
+[4]: ./lab-a-tour-of-the-client-api.md
 
 
