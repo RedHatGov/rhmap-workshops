@@ -24,6 +24,9 @@ In your preferred webbrowser open http://127.0.0.1:4000/
 ## Documentation - Workshop and Lab Structure
 All workshop content resides in the docs folder nested in subfolders under 'www'.  The workshops and screenshots can be different for different versions of RHMAP so we have organized the subfolder according to RHMAP release versions (e.g. 3.14, 4.3, etc...).  Note that currently there are concurrent major version releases that are very similar.  3.x is hosted and 4.x is on-prem so they can share some screenshots.
 
+Also, please prefix labs with 'lab' and workshop level files with 'workshop'.  And then inside them, make sure that the layout is set to use the correct layout of 'lab' or 'workshop'.
+
+
 ### Plugin Support
 GitHub Pages is powered by Jekyll. However, all Pages sites are generated using the --safe option to disable custom plugins for security reasons. Unfortunately, this means our plugins won’t work when deploying to GitHub Pages.
 

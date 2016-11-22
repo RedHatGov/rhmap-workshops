@@ -29,10 +29,13 @@ Basics of the RHMAP webconsole to work with cloud apps.
 ## a-tour-of-the-cli.md
 Basics of the RHMAP command line interface.  And setting up for SSH access.
 
-## a-tour-of-the-cloud-api.md
+## lab-a-tour-of-the-cloud-api.md
 Basic tour around the capability within the mBaaS APIs.
 
-## working-with-scm.md
+## lab-a-tour-of-the-client-api.md
+Basic tour around the capability within the mBaaS APIs.
+
+## lab-working-with-scm.md
 Setting up and working with the secure source control repo within RHMAP.
 
 ## building-your-first-app.md
@@ -53,5 +56,6 @@ COMING SOON!  See typical statistics about your apps/services and build custom c
 ## admin-setting-up-users-and-teams.md
 COMING SOON!  How to organize your users into teams and provide access via RBAC.
 
-## TBD.md
-COMING SOON!  TBD
+## lab-intro-to-nodejs.md
+COMING SOON!  Learn what all the fuss is around node.js and how you can use it to build microservices
+
