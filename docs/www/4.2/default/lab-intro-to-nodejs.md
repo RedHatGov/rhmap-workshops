@@ -9,5 +9,8 @@ categories: [lab, developers, git]
 ## Intro to Node.js
 TBD
 
+## Node Package Manager (npmjs.org)
+TBD
+
 ## Summary
 TBD
