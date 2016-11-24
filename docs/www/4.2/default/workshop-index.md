@@ -19,7 +19,7 @@ html_title: Workshops
 
 ### [Introduction to Client SDK and APIs](lab-a-tour-of-the-client-api-dotnet.html)
 
-### [Creating a Xamarin Sync Project](lab-working-with-xamarin.html)
+### [Creating a Sync Project](lab-working-with-xamarin.html)
 
 ### [Creating an mBaaS Weather Service](nodejs_weather_module.html)
 
