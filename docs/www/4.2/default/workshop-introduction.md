@@ -29,8 +29,9 @@ Navigate to the URI provided by your instructor and login with the user/password
 <img src="{{ site.baseurl }}/www/4.2/default/screenshots/rhmap-login.png" width="600"/><br/>
    *Login Webpage*
 
-Once logged in you should see your available projects - or a button to create a project if none exist already.
-
+Once logged in you should see your available actions.  Administrator's have access to Role and user based control to alter what appears on this home screen.
+<img src="{{ site.baseurl }}/www/4.2/default/screenshots/rhmap-homepage.png" width="600"/><br/>
+   *homepage with admin access*
 ## Let's take a look at what a project looks like
 First let's open a project.  Select the project named "Welcome Project."
 
@@ -41,15 +42,34 @@ In this screen you will note the three columns: Client apps, Cloud apps and MBaa
 
 ### Command Line Login
 Let's now login to the platform through the command line tool, "FHC".  to get started we need to set the platform target:
-
-* 'fhc target https://[lab-studio-domain].us.demos.redhatmobile.com'
+<blockquote>
+<i class="fa fa-terminal"></i> Type this in terminal:
+</blockquote>
+{% highlight csh %}
+$ fhc target https://[lab-studio-domain].us.demos.redhatmobile.com
+{% endhighlight %}
 
 We can then login using the credentials your instructor provided you:
-* 'fhc login [email address] [password]'
+<blockquote>
+<i class="fa fa-terminal"></i> Type this in terminal:
+</blockquote>
+{% highlight csh %}
+$ fhc login [email address] [password]
+{% endhighlight %}
+
 
 You can view a list of projects you have access to:
+<blockquote>
+<i class="fa fa-terminal"></i> Type this in terminal:
+</blockquote>
 
-* 'fhc projects'
+```
+Note: This command may take some time.
+```
+{% highlight csh %}
+$ fhc projects
+{% endhighlight %}
+
 
 <img src="{{ site.baseurl }}/www/4.2/default/screenshots/rhmap-fhc-projects.png" width="600"/><br/>
 *fhc projects list*

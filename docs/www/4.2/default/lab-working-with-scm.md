@@ -150,7 +150,7 @@ This element acts as a placeholder for the received value.<br />
 
 Save the file.
 
-Open the *www/hello.js* file in the editor.
+Open the *www/lib/hello.js* file in the editor.
 
 This file contains a click handler for the Say Hello From The Cloud button, which uses the $fh.cloud API to call the /hello endpoint of the cloud app and populates the placeholder <div id="timestamp"> element.
 Set the placeholder to the received timestamp value.
