@@ -5,25 +5,25 @@ subtitle: Let's get down to it.
 html_title: Workshops
 ---
 
-### [Setup Prerequisites](workshop-prerequisites.html)
+### [1. Setup Prerequisites](workshop-prerequisites.html)
 
-### [Login and Tour of Red Hat Mobile Application Platform](workshop-introduction.html)
+### [2. Login and Tour of Red Hat Mobile Application Platform](workshop-introduction.html)
 
-### [Getting Started Using the Web Console](a-tour-of-the-webconsole-xamarin.html)
+### [3. Getting Started Using the Web Console](a-tour-of-the-webconsole-xamarin.html)
 
-### [Modifying a Cloud App & Node.JS](a-tour-of-the-webconsole-cloud-app.html)
+### [4. Modifying a Cloud App & Node.JS](a-tour-of-the-webconsole-cloud-app.html)
 
-### [Introduction to Cloud App APIs](lab-a-tour-of-the-cloud-api.html)
+### [4.1 Introduction to Cloud App APIs(Optional)](lab-a-tour-of-the-cloud-api.html)
 
-### [Working with SCM](lab-working-with-scm.html)
+### [5. Working with SCM](lab-working-with-scm.html)
 
-### [Introduction to Client SDK and APIs](lab-a-tour-of-the-client-api-dotnet.html)
+### [5.1 Introduction to Client SDK and APIs(Optional)](lab-a-tour-of-the-client-api-dotnet.html)
 
-### [Creating a Sync Project](lab-working-with-xamarin.html)
+### [6. Creating a Sync Project](lab-working-with-xamarin.html)
 
-### [Creating an mBaaS Weather Service](nodejs_weather_module.html)
+### [7. Creating an mBaaS Weather Service](nodejs_weather_module.html)
 
-### [Drag and Drop Apps](drag-and-drop-apps.html)
+### [8. Drag and Drop Apps](drag-and-drop-apps.html)
 
 
 <!--  FUTURE LABS THAT ARE ADMIN/OPS FOCUSED

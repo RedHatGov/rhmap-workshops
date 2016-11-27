@@ -32,7 +32,7 @@ This area lets you edit the source code of any file in the Git repository of the
 ## Editing the Cloud App
 Now that we have navigated to the studio's editor lets explore what has been created for you already.  *application.js* is the starting point of the cloud app and contains the definitions to all the endpoints that are created.  The *test* folder has pre-generated acceptance testing for the application.  Finally, The *lib* folder has all the endpoints already created.  We will be modifying the default endpoint in this section.
 
-Open *applicaion.js*.<br />
+Open *applicaion.js*.  *application.js* is on the root of the file selection.<br />
 *application.js* handles all requests to the cloud app. The client app sends requests to the */hello* endpoint and the *application.js* file routes those requests to another file called *hello.js*.<br /><br />
 To learn more about routing Express, which we use for routing in our templates, visit the [Express documentation website](http://expressjs.com/en/4x/api.html#express.router).
 
