@@ -78,7 +78,7 @@ hello.post('/', function(req, res) {
 {% endhighlight %}
 
 <blockquote>
-<i class="fa"></i> Feel free to copy this code and overwrite the whole file:
+<i class="fa"></i> Your full file should read as follows:
 </blockquote>
 {% highlight JavaScript %}
 
@@ -121,4 +121,4 @@ Click **Deploy Cloud App**. <br />
 You will now be able to see the timestamp on the client app.
 
 ## Summary
-With simple templated routes a developer can rapidly develop end points for mobile apps.  In a later lab we will develop a mBaaS service that interfaces with preexisting infrastructure.  As you begin developing these reusable pieces it will become faster and faster to create and deploy apps.  
+With simple templated routes a developer can rapidly develop end points for mobile apps.  The app we developed will interface with the client app that was created in this welcome project.  We will be coming back to this cloud app in a later lab to see the changes you've made on a device.

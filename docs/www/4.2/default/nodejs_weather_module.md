@@ -10,9 +10,9 @@ categories: [lab, developers, forms]
 
 1. In the studio's header select **Services & Api's**.  This page will list all preexisting mBaaS apis and allow you to create/modify more.  
 
-2. Select **Provision mBaaS Service API**.  The follow page will list all preexisting services templates that Red Hat provides.  Many common services such as Salesforce, MongoDB and MySQL connectors are there to making connecting to your existing infrastructure easier.  If a service doeesn't exist within Red Hat's templates we can create a new one like we will in the lab.
+2. Select **Provision mBaaS Service API**.  The following page will list all preexisting services templates that Red Hat provides.  Many common services such as Salesforce, MongoDB and MySQL connectors are there to making connecting to your existing infrastructure easier.  If a service doeesn't exist within Red Hat's templates we can create a new one like we will in the lab.
 
-3. Choose **New mBaaS Service** and name your service '\<yourname\>\_weatherService'.  Click **Next** to procede.
+3. Click **Choose** inside the **New mBaaS Service**.  Name your service '\<yourname\>\_weatherService' and click **Next** to procede.
 
 4. Once the bar turns green, click **Finish** to continue to the service *Details*.
 <img src="{{ site.baseurl }}/www/4.2/default/screenshots/rhmap-build-progress.png" width="600"/><br/>
@@ -45,6 +45,7 @@ By adding '/hello' to the end of the url in your browser you can see your endpoi
 Lets modify this code locally as its easier in an editor you are used too.  Since RHMAP stores all its code in git we can use all git commands and we aren't locked into using FHC to clone any code.
 
 We will need the git URL that is associated to our mBaaS Service.  Navigate to the *Details* page to copy that link.
+<img src="{{ site.baseurl }}/www/4.2/default/screenshots/rhmap-mbaas-giturl.png" width="600"/><br/>
 
 To start lets navigate our terminal back to the folder where we cloned everything. Once we are there we will clone the mBaaS service.
 
@@ -52,6 +53,7 @@ To start lets navigate our terminal back to the folder where we cloned everythin
 <i class="fa fa-terminal"></i> Goto the terminal and type the following (replacing the git url with yours):
 </blockquote>
 {% highlight csh %}
+$ cd ~/workspace/rhmap/
 $ git clone <git url>
 $ cd <new service directory>
 {% endhighlight %}
@@ -189,6 +191,7 @@ This lab will be using an external weather service.  Since we will no longer nee
 {% highlight Javascript %}
 //http://api.openweathermap.org/data/2.5/weather?q=washington,united%20states&appid=f6892c041e7d03a3165bbe815ceba731
 {% endhighlight %}
+This comment contains the appid which is used for this api.  We have created an account on openweathermap so we can use their api.
 
 Since we will be querying outside this mBaaS service we will need to import a new requirement.
 
@@ -269,8 +272,8 @@ Once the *weather.js* file is added we will need to commit all our changes and a
 <i class="fa fa-terminal"></i> Goto the terminal and type the following:
 </blockquote>
 {% highlight csh %}
-& cd ..
-& git commit -am"Updating my mBaaS Service to connect to openweathermap API"
+$ cd ..
+$ git commit -am"Updating my mBaaS Service to connect to openweathermap API"
 {% endhighlight %}
 
 Finally we can push our code back to the git repository in the platform.
@@ -278,13 +281,13 @@ Finally we can push our code back to the git repository in the platform.
 <i class="fa fa-terminal"></i> Goto the terminal and type the following:
 </blockquote>
 {% highlight csh %}
-& git push
+$ git push
 {% endhighlight %}
 
 ## Deploying Your New mBaaS Service
 Now that we pushed our code back into the platform, we need to build the code.  This is done almost identically to a *cloud app*.  We will have to navigate back to our service.
 
-Select the **Services & APIs** button.
+Select the **Services & APIs** button in the studio header.
 
 Navigate to the mBaaS service you created.  This will take you to the *Details* Page.
 
