@@ -162,7 +162,7 @@ module.exports = weatherRoute;
 {% endhighlight %}
 
 <blockquote>
-<i class="fa"></i> Rename the "hello" variables to "weather".  This will occur on lines 7,8,9,12,23 and 31:
+<i class="fa"></i> Rename the "hello" variables to "weather".  You can use find and replace on "hello" and replace to "weather" This will occur on lines 7,8,9,12,23 and 31:
 </blockquote>
 <img src="{{ site.baseurl }}/www/4.2/default/screenshots/rhmap-find-hello.png" width="600"/><br/>
 
@@ -307,7 +307,7 @@ Since we left the hello route in tact, you will be able to see if it's working. 
 {"msg":"Hello World"}
 ```
 
-Now we can remove *'/hello'* and add *'/weather'*.  You will now get a query of the local weather in Washington D.C.
+Now we can remove *'/hello'* and add *'/weather'*.  You will now get a query of the local weather in Washington D.C.  You can paste the results in a website like https://jsonformatter.curiousconcept.com/ to see them in a nicer format.
 {% highlight JSON %}
 {
    "coord":{

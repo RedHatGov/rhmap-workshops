@@ -19,11 +19,9 @@ html_title: Workshops
 
 ### [5.1 Introduction to Client SDK and APIs(Optional)](lab-a-tour-of-the-client-api-dotnet.html)
 
-### [6. Creating a Sync Project](lab-working-with-xamarin.html)
+### [6. Creating an mBaaS Weather Service](nodejs_weather_module.html)
 
-### [7. Creating an mBaaS Weather Service](nodejs_weather_module.html)
-
-### [8. Drag and Drop Apps](drag-and-drop-apps.html)
+### [7. Drag and Drop Apps](drag-and-drop-apps.html)
 
 
 <!--  FUTURE LABS THAT ARE ADMIN/OPS FOCUSED
