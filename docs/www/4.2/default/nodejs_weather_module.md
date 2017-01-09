@@ -1,8 +1,8 @@
 ---
 layout: lab
-title: Your first Node.js Endpoint
+title: 6. Creating an mBaaS Weather Service
 subtitle: Using node.js to access preexisting infrastructure.  
-html_title: Weather Cloud App
+html_title: Creating an mBaaS Weather Service
 categories: [lab, developers, forms]
 ---
 
@@ -61,36 +61,10 @@ $ cd <new service directory>
 ## Adding a New Endpoint
 In this lab we will be creating a new endpoint to query a weather API.  We will need to modify the *application.js* file and create a new endpoint file.  We will start by modifying the *application.js* file
 
-Open the *application.js* file in any editor you are comfortable in.  This time instead of modifying the hello route we will be creating a new route.
+Open the *application.js* file in any editor you are comfortable in.  We will overwrite this file and then step through what code is doing in the file.
 <blockquote>
-<i class="fa"></i> Find this line(8):
+Overwrite <i>application.js</i> with the following contents:
 </blockquote>
-{% highlight Javascript %}
-securableEndpoints = ['/hello'];
-{% endhighlight %}
-
-<blockquote>
-<i class="fa"></i> Modify the code to look like:
-</blockquote>
-{% highlight Javascript %}
-securableEndpoints = ['/hello', '/weather'];
-{% endhighlight %}
-
-<blockquote>
-<i class="fa"></i> Find this line(25):
-</blockquote>
-{% highlight Javascript %}
-app.use('/hello', require('./lib/hello.js')());
-{% endhighlight %}
-
-<blockquote>
-<i class="fa"></i> Add a new line after the line you just found:
-</blockquote>
-{% highlight Javascript %}
-app.use('/weather', require('./lib/weather.js')());
-{% endhighlight %}
-
-At this point your *application.js* file should read as follows(Feel free to paste this over your code if needed):
 {% highlight Javascript %}
 var mbaasApi = require('fh-mbaas-api');
 var express = require('express');
@@ -116,6 +90,7 @@ app.use(express.static(__dirname + '/public'));
 // Note: important that this is added just before your own Routes
 app.use(mbaasExpress.fhmiddleware());
 
+
 app.use('/hello', require('./lib/hello.js')());
 app.use('/weather', require('./lib/weather.js')());
 
@@ -129,7 +104,14 @@ app.listen(port, host, function() {
   console.log("App started at: " + new Date() + " on port: " + port);
 });
 {% endhighlight %}
-Save *application.js*
+<blockquote>
+Save <i>application.js</i>.
+</blockquote>
+
+<img src="{{ site.baseurl }}/www/4.2/default/screenshots/rhmap_applicationjs_endpoints.png" width="600"/><br/>
+
+
+<img style="margin-left:-2px;" src="{{ site.baseurl }}/www/4.2/default/screenshots/rhmap_applicationjs_routing.png" width="600"/><br/>
 
 
 
@@ -145,6 +127,42 @@ $ cp hello.js weather.js
 {% endhighlight %}
 
 Open the *weather.js* file in any editor you are comfortable in.
+<blockquote>
+Overwrite <i>weather.js</i> with the following contents.
+</blockquote>
+{% highlight Javas
+{% highlight Javascript %}
+var express = require('express');
+var bodyParser = require('body-parser');
+var cors = require('cors');
+var request = require('request');
+
+function weatherRoute() {
+  var weather = new express.Router();
+  weather.use(cors());
+  weather.use(bodyParser());
+
+  // GET&POST REST endpoint - query params may or may not be populated
+  weather.all('/', function(req, res) {
+    //http://api.openweathermap.org/data/2.5/weather?q=washington,united%20states&appid=f6892c041e7d03a3165bbe815ceba731
+    request.get({
+      url : "http://api.openweathermap.org/data/2.5/weather?q=washington,united%20states&appid=f6892c041e7d03a3165bbe815ceba731",
+      json : true
+
+    }, function(error, response, body){
+        if (error){
+          return res.status(500).json(error);
+        }
+        return res.json(body);
+    });
+  });
+
+  return weather;
+}
+
+module.exports = weatherRoute;
+{% endhighlight %}
+
 
 <blockquote>
 <i class="fa"></i> On Line 5, Rename “helloRoute” to “weatherRoute”:

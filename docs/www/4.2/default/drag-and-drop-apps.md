@@ -1,8 +1,8 @@
 ---
 layout: lab
-title: Drag and drop apps
+title: 7. Drag and Drop Apps
 subtitle: Working with the forms builder
-html_title: Drag and drop apps
+html_title: Drag and Drop Apps
 categories: [lab, developers, forms]
 ---
 

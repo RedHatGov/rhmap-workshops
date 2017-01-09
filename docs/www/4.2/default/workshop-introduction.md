@@ -1,8 +1,8 @@
 ---
 layout: lab
-title: A Guided Tour of Red Hat Mobile Application Platform
-subtitle: Welcome to Red Hat Mobile Application Platform
-html_title: Welcome to Red Hat Mobile Application Platform
+title: 2. Login and Tour of Red Hat Mobile Application Platform
+subtitle: A guided tour of Red Hat Mobile Application Platform
+html_title: Login and Tour of Red Hat Mobile Application Platform
 categories: [lab, intro, welcome, developers, ops]
 ---
 

@@ -1,8 +1,8 @@
 ---
 layout: lab
-title: Working with SCM
-subtitle: Who knew git was so easy
-html_title: Working with SCM
+title: 5. Working with SCM
+subtitle: Working with Source Control Management
+html_title: Working With SCM
 categories: [lab, developers, git]
 ---
 

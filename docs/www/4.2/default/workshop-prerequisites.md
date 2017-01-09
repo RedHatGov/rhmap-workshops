@@ -1,8 +1,8 @@
 ---
 layout: lab
-title: Workshop Prerequisites
+title: 1. Setup Prerequisites
 subtitle: Make sure you have done the following before starting the workshop labs
-html_title: Prerequisites
+html_title: Setup Prerequisites
 categories: [developers, developers]
 ---
 

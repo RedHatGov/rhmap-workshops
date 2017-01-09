@@ -1,6 +1,6 @@
 ---
 layout: lab
-title: Modifying a Cloud App & Node.JS
+title: 4. Modifying a Cloud App & Node.JS
 subtitle: Understanding how cloud apps work
 html_title: Modifying a Cloud App & Node.JS
 categories: [lab, intro, welcome, developers, ops]
