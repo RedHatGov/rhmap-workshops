@@ -43,7 +43,7 @@ In this screen you will note the three columns: Client apps, Cloud apps and MBaa
 ### Command Line Login
 Let's now login to the platform through the command line tool, "FHC".  to get started we need to set the platform target:
 <blockquote>
-<i class="fa fa-terminal"></i> Type this in terminal:
+<i class="fa fa-terminal"></i> Type this in terminal(replace [lab-studio-domain] with the studio domain provided to you):
 </blockquote>
 {% highlight csh %}
 $ fhc target https://[lab-studio-domain].us.demos.redhatmobile.com
