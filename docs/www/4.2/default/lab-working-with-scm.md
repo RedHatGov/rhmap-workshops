@@ -1,6 +1,6 @@
 ---
 layout: lab
-title: 5. Working with SCM
+title: 6. Working with SCM
 subtitle: Working with Source Control Management
 html_title: Working With SCM
 categories: [lab, developers, git]

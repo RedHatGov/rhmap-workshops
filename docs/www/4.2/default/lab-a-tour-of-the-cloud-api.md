@@ -1,6 +1,6 @@
 ---
 layout: lab
-title: 4.1 Introduction to Cloud App APIs
+title: 5.1 Introduction to Cloud App APIs
 subtitle: A Brief Tour of the Cloud API
 html_title: A Brief Tour of the Cloud API
 categories: [lab, developers, api, cloud]

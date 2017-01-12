@@ -1,6 +1,6 @@
 ---
 layout: lab
-title: 6. Creating an mBaaS Weather Service
+title: 7. Creating an mBaaS Weather Service
 subtitle: Using node.js to access preexisting infrastructure.  
 html_title: Creating an mBaaS Weather Service
 categories: [lab, developers, forms]
@@ -130,7 +130,6 @@ Open the *weather.js* file in any editor you are comfortable in.
 <blockquote>
 Overwrite <i>weather.js</i> with the following contents.
 </blockquote>
-{% highlight Javas
 {% highlight Javascript %}
 var express = require('express');
 var bodyParser = require('body-parser');

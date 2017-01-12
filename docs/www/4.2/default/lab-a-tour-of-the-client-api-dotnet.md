@@ -1,6 +1,6 @@
 ---
 layout: lab
-title: 5.1 Introduction to Client SDK and APIs
+title: 6.1 Introduction to Client SDK and APIs
 subtitle: A Brief Tour of the Client SDK and Client API
 html_title: A Brief Tour of the Client SDK and API
 categories: [lab, developers, api, cloud]

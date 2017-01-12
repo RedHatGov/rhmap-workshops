@@ -1,6 +1,6 @@
 ---
 layout: lab
-title: 3. Getting Started Using the Web Console
+title: 4. Getting Started Using the Web Console
 subtitle: Getting Started Using Red Hat Mobile Application Platform Studio
 html_title: Getting Started Using the Web Console
 categories: [lab, intro, welcome, developers, ops]
