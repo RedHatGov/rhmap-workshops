@@ -120,13 +120,14 @@ function currentWeatherRoute() {
   currentWeather.all('/', function(req, res) {
       var req = req;
       var res = res;
+      console.log('lat & lon:' + lat + " & " + lon);
         $fh.service({
             "guid" : "2562mt36wrp5keheo67nwsqy", // The 24 character unique id of the service
             "path": "/weather", //the path part of the url excluding the hostname - this will be added automatically
             "method": "POST",   //all other HTTP methods are supported as well. for example, HEAD, DELETE, OPTIONS
             "params": {
-                "lat": "35.7497099",
-                "lon": "-78.7344123"
+                "lat": req.body.lat,
+                "lon": req.body.lon
             }, //data to send to the server - same format for GET or POST
                 "timeout": 25000, // timeout value specified in milliseconds. Default: 60000 (60s)
                 "headers" : {
@@ -141,7 +142,7 @@ function currentWeatherRoute() {
                     console.log('Got response from service - status body : ', res2.statusCode, body);
                     //convert from kelvin
                     var temp = ((  body.main.temp - 273.15) * 9/5) + 32
-                    res.json({msg: 'temp ' + temp.toFixed(2)});
+                    res.json({msg: 'Temperature: ' + temp.toFixed(2) + "&#8457;"});
                 }
         });
   });
@@ -156,14 +157,21 @@ module.exports = currentWeatherRoute;
 <i class="fa"></i>Save your changes by clicking <b>File > Save</b> in the editor.
 </blockquote>
 
+<img src="{{ site.baseurl }}/www/4.2/default/screenshots/rhmap-getweather-cloud-currentweather-line12.png" width="600"/><br/>
+<img src="{{ site.baseurl }}/www/4.2/default/screenshots/rhmap-getweather-cloud-currentweather-line16.png" width="600"/><br/>
+<img src="{{ site.baseurl }}/www/4.2/default/screenshots/rhmap-getweather-cloud-currentweather-line36.png" width="600"/><br/>
+<blockquote>
+<i class="fa"></i> Select /lib/hello.js in the editor's side bar.  Then select <b>File > Delete</b> and confirm deletion of hello.js
+</blockquote>
+We no longer need the original route for this cloud application and we can remove it.
 
+<blockquote>
+<i class="fa"></i> Click <b>Deploy</b> on the sidebar on the left.  
+</blockquote>
 
-
-
-Click **Deploy** on the sidebar on the left.
-
-Click **Deploy Cloud App**. <br />
-You will now be able to see the timestamp on the client app.
+<blockquote>
+<i class="fa"></i>Click <b>Deploy Cloud App</b>.
+</blockquote>
 
 ## Summary
 With simple templated routes a developer can rapidly develop end points for mobile apps.  The app we developed will interface with the client app that was created in this welcome project.  We will be coming back to this cloud app in a later lab to see the changes you've made on a device.
