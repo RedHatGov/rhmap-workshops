@@ -11,7 +11,7 @@ html_title: Workshops
 
 ### [3. What We Will be Making in the Upcoming Labs](weather-app-introduction.html)
 
-### [4. Getting Started Using the Web Console](a-tour-of-the-webconsole-xamarin.html)
+### [4. Getting Started Using the Web Console](a-tour-of-the-webconsole.html)
 
 ### [5. Modifying a Cloud App & Node.JS](a-tour-of-the-webconsole-cloud-app.html)
 

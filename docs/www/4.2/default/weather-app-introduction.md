@@ -16,6 +16,8 @@ Before we begin development, lets talk about the architecture.  Mobile applicati
 <img src="{{ site.baseurl }}/www/4.2/default/screenshots/rhmap_getWeather_architecture.png" width="600"/><br/>
 
 ## The Flow of data
+Generally the most challenging part of mobile development is the passing of data between the mobile device and the back end application.  With Red Hat Mobile Application Platform, this is done for you out of the box.
+
 In this lab we will be building a Cordova based application for the mobile device.  This is a hybrid app, which means we can build this for all popular mobile platforms and it is ideal in a bring your own device scenario for an organization.  
 <img src="{{ site.baseurl }}/www/4.2/default/screenshots/rhmap_getWeather_step1.png" width="600"/><br/>
 *figure 1*<br/>
@@ -30,9 +32,9 @@ Shown in figure 2, once the cloud app receives a request from the mobile app, it
 <img src="{{ site.baseurl }}/www/4.2/default/screenshots/rhmap_getWeather_step4.png" width="600"/><br/>
 *figure 4*<br />
 <img src="{{ site.baseurl }}/www/4.2/default/screenshots/rhmap_getWeather_step5.png" width="600"/><br/>
-*figure 5*
+*figure 5*<br />
 The mBaaS service will format the request to theOpenWeatherMap API and send the request.  It will receive the information and pass it back to the Cloud Code app.  We design the architecture to have this third tier for reusability.  For example, lets say we want to create another application to get the current humidity.  If we where to perform the transform in the cloud code application which would lead to more custom code and slower development.  The API we will be using in the lab is <a href="http://openweathermap.org/api">OpenWeatherMap.org</a>.  They provide an API to gather current weather, historical data, and much more.  The current weather REST endpoint we use today provides a large amount of data including, temperature in Kelvin, pressure, humidity, sea level and much more.  For todays application we will not need all this data; however, we don't want to alter how the data incoming from an API in a mBaaS endpoint.
 
 <img src="{{ site.baseurl }}/www/4.2/default/screenshots/rhmap_getWeather_step6.png" width="600"/><br/>
-*figure 6*
+*figure 6*<br />
 Finally, in figure 6, the cloud code returns the formatted data.  We are trimming out the information we don't need and formatting the temperature.  This can be important because mobile phones often run over mobile data and it is crucial to keep bandwidth down for the users.  
