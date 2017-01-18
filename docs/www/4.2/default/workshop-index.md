@@ -13,7 +13,7 @@ html_title: Workshops
 
 ### [4. Getting Started Using the Web Console](a-tour-of-the-webconsole.html)
 
-### [5. Modifying a Cloud App & Node.JS](a-tour-of-the-webconsole-cloud-app.html)
+### [5. Modifying a Cloud App & Node.JS](a-tour-of-the-webconsole-cloud-weather-app.html)
 
 ### [5.1 Introduction to Cloud App APIs(Optional)](lab-a-tour-of-the-cloud-api.html)
 
