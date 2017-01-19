@@ -17,7 +17,7 @@ html_title: Workshops
 
 ### [5.1 Introduction to Cloud App APIs(Optional)](lab-a-tour-of-the-cloud-api.html)
 
-### [6. Working with SCM](lab-working-with-scm.html)
+### [6. Working with SCM](lab-working-with-scm-getweather.html)
 
 ### [6.1 Introduction to Client SDK and APIs(Optional)](lab-a-tour-of-the-client-api-dotnet.html)
 
