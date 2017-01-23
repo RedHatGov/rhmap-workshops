@@ -21,7 +21,7 @@ html_title: Workshops
 
 ### [6.1 Introduction to Client SDK and APIs(Optional)](lab-a-tour-of-the-client-api-dotnet.html)
 
-### [7. Creating an mBaaS Weather Service](nodejs_weather_module.html)
+### [7. Creating an mBaaS Weather Service](nodejs_getweather_module.html)
 
 ### [8. Drag and Drop Apps](drag-and-drop-apps.html)
 
