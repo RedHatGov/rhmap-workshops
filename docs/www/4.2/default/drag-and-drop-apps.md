@@ -7,7 +7,7 @@ categories: [lab, developers, forms]
 ---
 
 ## Working with the forms builder
-The Red Hat Mobile Application Platform Hosted (RHMAP) Studio provides you with all the tools you need to quickly create mobile apps for capturing data submissions using a powerful drag and drop UI.  Drag & Drop forms-based apps are a way of quickly creating simple mobile apps or prototypes.  The platform includes features for drag and drop apps such as photos, scan, gps, signature capture, etc.  The apps created can then be easily integrated with backend systems or other cloud services.  All Forms based app's functionality is available as RESTful Web Services.
+The Red Hat Mobile Application Platform Hosted (RHMAP) Studio provides you with all the tools you need to quickly create mobile apps for capturing data submissions using a powerful drag and drop UI.  Drag & Drop forms-based apps are a way of quickly creating simple mobile apps or prototypes.  The platform includes features for drag and drop apps such as photos, scan, GPS, signature capture, etc.  The apps created can then be easily integrated with backend systems or other cloud services.  All Forms based app's functionality is available as RESTful Web Services.
 
 This lab will step you through how to use the drag and drop builder.
 
@@ -25,41 +25,66 @@ Summary of steps to create a drag and drop app:
 
 ## Creating a Form
 Forms are used to capture data from the end users of your solution. To create a new form:
-
-1. Select **Drag and Drop Apps** in the platform header.
+<blockquote>
+<i class="fa"></i> Select <b>Drag and Drop Apps</b> in the platform header.
+</blockquote>
 <img src="{{ site.baseurl }}/www/4.2/default/screenshots/rhmap-dragandrop-select.png" width="600"/><br/>
 
-2. Click on the **Forms Builder** Menu.  This screen will show all forms created within the platform.  They can be reusable within multiple applications.  
+<blockquote>
+<i class="fa"></i> Click on the <b>Forms Builder</b> Menu.
+</blockquote>
+This screen will show all forms created within the platform.  They can be reusable within multiple applications.
 
-3. Click on **New Form**.  This page shows templated forms we have already prebuilt.  You can see the configurations of each of these templates within the *preview*.  
+<blockquote>
+<i class="fa"></i> Click on <b>New Form</b>.
+</blockquote>
+This page shows templated forms we have already prebuilt.  You can see the configurations of each of these templates within the *preview*.  
 
-4. Select any of these templates or select **Blank Form** to start with a clean app.
+<blockquote>
+<i class="fa"></i> Select any of these templates or select **Blank Form** to start with a clean app.
+</blockquote>
 
-5. Scroll down the page, and add name your form within the text box.
+<blockquote>
+<i class="fa"></i> Scroll down the page, and add name your form within the text box.
+</blockquote>
 
-6. Select **Create Form**.
+<blockquote>
+<i class="fa"></i> Select <b>Create Form</b>.
+</blockquote>
 
 ## Editing a Form
 Now that we have created a form.  We can begin to edit to fit a use case you need.
 <img src="{{ site.baseurl }}/www/4.2/default/screenshots/rhmap-form-editor.png" width="600"/><br/>
 
-1. Select the **Text** button to create a text entry on your form.  
+<blockquote>
+<i class="fa"></i> Select the <b>Text</b> button to create a text entry on your form.
+</blockquote>
+
 ```
 NOTE: Clicking a field will add it to the end of a form.
 Dragging allows you to position a field anywhere in the form.
 ```
-2. Click on the newly added field.  
+
+<blockquote>
+<i class="fa"></i> Click on the newly added field.
+</blockquote>
 A new menu will appear at the right hand side of the page. This menu allows us to further configure the selected field.
 
-3. Rename the textfield '*Name*', ensure the '*Required*' check box is ticked.  <br /><br />
-Having this box checked means that a user can not submit the form unless they have entered a value for this field.<br /><br />
-A preview of what the form looks like can be seen by clicking the Preview tab, located at the right hand side of the page. Here you can get a preview of what the current form looks like on a device.<br /><br />
-Forms can easily be created with multiple pages and fields can have specific validation rules associated to them. <br /><br />
-Advanced fields such as photo capture and signature capture are just as easy to use as simple fields and can also be repeated in a form as many times as you wish.
+<blockquote>
+<i class="fa"></i> Rename the textfield '<i>Name</i>', ensure the '<i>Required</i>' check box is ticked.
+</blockquote>
+Having this box checked means that a user can not submit the form unless they have entered a value for this field.<br/>
+A preview of what the form looks like can be seen by clicking the Preview tab, located at the right hand side of the page. Here you can get a preview of what the current form looks like on a device.<br/>
+Forms can easily be created with multiple pages and fields can have specific validation rules associated to them.  Advanced fields such as photo capture and signature capture are just as easy to use as simple fields and can also be repeated in a form as many times as you wish.
 
-4. Try adding the **Signature Capture**, **Photo Capture** and **Map** fields.  Edit the names on these fields.  
+<blockquote>
+<i class="fa"></i> Add the <b>Signature Capture</b>, <b>Photo Capture</b> and any other fields.  Edit the names on these fields.
+</blockquote>
 
-4. Click Save. This will save the form in its current state and cause the browser to return to the Forms Screen.
+<blockquote>
+<i class="fa"></i> Click Save.
+</blockquote>
+This will save the form in its current state and cause the browser to return to the Forms Screen.
 
 ## Defining Rules & Notifications
 The powerful Rules section of a form enables you to create both field and page based rules. Field rules let you enable or disable the display of certain fields based on the contents of other fields. Page rules let you enable or disable the display of certain pages based on the contents of specific fields. In both cases, multiple rules and criteria can be created.
@@ -69,42 +94,79 @@ E-mail notifications can be set on a per-form basis. Different users or sets of 
 ## Create a Theme for Your Forms
 Themes are used to control the look and feel of your Drag and Drop App. You can just use the default theme if you wish to get started quickly. It’s unlikely that you’ll create many themes for your apps but at a minimum, you may just wish to set your logo.
 
-1. Select **Drag and Drop Apps** in the platform header.
+<blockquote>
+<i class="fa"></i> Select <b>Drag and Drop Apps</b> in the platform header.
+</blockquote>
 
-2. Click on the **Forms Themes** Menu.  This screen will show all themes created within the platform.  They can be reusable for multiple forms.  
+<blockquote>
+<i class="fa"></i> Click on the <b>Forms Themes</b> Menu.
+</blockquote>
+This screen will show all themes created within the platform.  They can be reusable for multiple forms.  
 
-3. Click on **New Theme**.
+<blockquote>
+<i class="fa"></i> Click on <b>New Theme</b>.
+</blockquote>
 
-4. Select a *template* to get started.
+<blockquote>
+<i class="fa"></i> Select a <i>template</i> to get started.
+</blockquote>
 
-5. Give your theme a name and a description.
+<blockquote>
+<i class="fa"></i> Give your theme a name and a description.
+</blockquote>
 
-6. Click **Create Theme** and you’ll be brought to the **Edit Theme** page.
+<blockquote>
+<i class="fa"></i> Click <b>Create Theme</b> and you’ll be brought to the <b>Edit Theme</b> page.
+</blockquote>
+At this point you may make any changes you wish to colors, fonts, spacing or the main logo.
 
-7. Make any changes you wish to colors, fonts, spacing or the main logo
+<blockquote>
+<i class="fa"></i> When finished making any changes, scroll to the bottom and click <b>Save</b>.
+</blockquote>
 
-8. When finished making any changes, scroll to the bottom and click **Save**.
 
 ## Creating an App for the Form.
 Now that we have created a form and a theme we will need to create the app to combine them.  This allows you to combine forms with different themes.
 
-1. Navigate to the Forms Projects sub-section of the Drag & Drop Apps area.
+<blockquote>
+<i class="fa"></i> Navigate to the Forms Projects sub-section of the Drag & Drop Apps area.
+</blockquote>
 
-2. Click **New Forms Project** and give your project a name.  Finish by clicking next.
-<br /><br />
+<blockquote>
+<i class="fa"></i> Click <b>Create New Project</b> and give your project a name.  Click next.
+</blockquote>
 This will cause Studio to start generating all the necessary code for your app. When the project has successfully been created, you will be prompted to pick a theme and pick the form(s) that should be included in the App. You can now choose the theme and form you created above.
 
-3. Click **Finish**.
+<blockquote>
+<i class="fa"></i> Select your <i>Project Theme</i> from the dropdown.
+</blockquote>
+
+<blockquote>
+<i class="fa"></i> Add the form(s) you have created to textbox and click <b>Save</b>
+</blockquote>
+
+<blockquote>
+<i class="fa"></i> Scroll to the bottom of the page and click <b>Finish</b>.
+</blockquote>
+Upon completion of this you will be moved to the <i>Dashboard</i> of your forms project.
 
 ## Generate and Install your app
 Building forms app is done through the build farm.  Once built you can download it to your phone similar to the app in the earlier lab.
 
-1. In the **Forms Projects** area for your forms based app, select **Dashboard** on the left sidebar.
+<blockquote>
+<i class="fa"></i> Click <b>Build this app</b> in the <i>Cordova Forms App</i>.
+</blockquote>
 
-2. In the resulting **Build a Binary** screen, pick your target mobile platform (for example, Android), pick **Debug** build type, and pick a **Cloud App Connection**.
+<blockquote>
+<i class="fa"></i> Select Android as the platform.
+</blockquote>
+
+```
 If you are building an Android Debug app, you don’t need any credentials. If you are building a Production Android App or any type of iOS App, you will be prompted to upload the various credentials needed.
-
-3. Select **Build**.
+```
+<blockquote>
+<i class="fa"></i> Select <b>Build</b>.
+</blockquote>
 
 ## Submit Data from your app.
 Install the app on your device using the QR code or short-URL.   Run the app and then start creating submissions in the forms that you included in your App.  If you cannot due to credentials there will be a **Forms Project** you can see details in for the next section. <br /><br />
