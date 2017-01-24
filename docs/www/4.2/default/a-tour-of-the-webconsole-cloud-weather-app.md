@@ -33,13 +33,13 @@ This area lets you edit the source code of any file in the Git repository of the
 Now that we have navigated to the studio's editor lets explore what has been created for you already.  *application.js* is the starting point of the cloud app and contains the definitions to all the endpoints that are created.  The *test* folder has pre-generated acceptance testing for the application.  Finally, The *lib* folder has all the endpoints already created.  We will be modifying the default endpoint in this section.
 
 <blockquote>
-<i class="fa"></i> Click on application.js to open it.
+<i class="fa fa-desktop"></i> Click on application.js to open it.
 </blockquote>
 *application.js* is on the root of the file selection.  *application.js* handles all requests to the cloud app. The client app sends requests to the */hello* endpoint and the *application.js* file routes those requests to another file called *hello.js*.<br /><br />
 To learn more about routing Express, which we use for routing in our templates, visit the [Express documentation website](http://expressjs.com/en/4x/api.html#express.router).
 
 <blockquote>
-<i class="fa"></i> Copy this code over application.js
+<i class="fa fa-desktop"></i> Copy this code over application.js
 </blockquote>
 {% highlight JavaScript %}
 var mbaasApi = require('fh-mbaas-api');
@@ -80,7 +80,7 @@ app.listen(port, host, function() {
 {% endhighlight %}
 
 <blockquote>
-<i class="fa"></i>Save your changes by clicking <b>File > Save</b> in the editor.
+<i class="fa fa-desktop"></i> Save your changes by clicking <b>File > Save</b> in the editor.
 </blockquote>
 
 The changes are saved to the Git repository of the cloud app. To propagate the changes to the running instance, you must re-deploy the cloud app.
@@ -95,15 +95,15 @@ We also modified where to route the request.
 
 We now must create the file that we are routing our requests to.  
 <blockquote>
-<i class="fa"></i> click <b>lib</b> in the file tree to select the folder.
+<i class="fa fa-desktop"></i> click <b>lib</b> in the file tree to select the folder.
 </blockquote>
 
 <blockquote>
-<i class="fa"></i> To create a file click <b>File > New File</b> and name the file: currentWeather.js
+<i class="fa fa-desktop"></i> To create a file click <b>File > New File</b> and name the file: currentWeather.js
 </blockquote>
 
 <blockquote>
-<i class="fa"></i> Copy the following contents into the newly created file.
+<i class="fa fa-desktop"></i> Copy the following contents into the newly created file.
 </blockquote>
 {% highlight JavaScript %}
 var express = require('express');
@@ -154,23 +154,23 @@ module.exports = currentWeatherRoute;
 {% endhighlight %}
 
 <blockquote>
-<i class="fa"></i>Save your changes by clicking <b>File > Save</b> in the editor.
+<i class="fa fa-desktop"></i> Save your changes by clicking <b>File > Save</b> in the editor.
 </blockquote>
 
 <img src="{{ site.baseurl }}/www/4.2/default/screenshots/rhmap-getweather-cloud-currentweather-line12.png" width="600"/><br/>
 <img src="{{ site.baseurl }}/www/4.2/default/screenshots/rhmap-getweather-cloud-currentweather-line16.png" width="600"/><br/>
 <img src="{{ site.baseurl }}/www/4.2/default/screenshots/rhmap-getweather-cloud-currentweather-line36.png" width="600"/><br/>
 <blockquote>
-<i class="fa"></i> Select /lib/hello.js in the editor's side bar.  Then select <b>File > Delete</b> and confirm deletion of hello.js
+<i class="fa fa-desktop"></i> Select /lib/hello.js in the editor's side bar.  Then select <b>File > Delete</b> and confirm deletion of hello.js
 </blockquote>
 We no longer need the original route for this cloud application and we can remove it.
 
 <blockquote>
-<i class="fa"></i> Click <b>Deploy</b> on the sidebar on the left.  
+<i class="fa fa-desktop"></i> Click <b>Deploy</b> on the sidebar on the left.  
 </blockquote>
 
 <blockquote>
-<i class="fa"></i>Click <b>Deploy Cloud App</b>.
+<i class="fa fa-desktop"></i> Click <b>Deploy Cloud App</b>.
 </blockquote>
 
 ## Summary

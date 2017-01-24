@@ -164,7 +164,7 @@ module.exports = weatherRoute;
 
 
 <blockquote>
-<i class="fa"></i> On Line 5, Rename “helloRoute” to “weatherRoute”:
+<i class="fa fa-desktop"></i> On Line 5, Rename “helloRoute” to “weatherRoute”:
 </blockquote>
 {% highlight Javascript %}
 function weatherRoute() {
@@ -172,19 +172,19 @@ function weatherRoute() {
 
 
 <blockquote>
-<i class="fa"></i> On Line 34 Rename “helloRoute” to “weatherRoute”:
+<i class="fa fa-desktop"></i> On Line 34 Rename “helloRoute” to “weatherRoute”:
 </blockquote>
 {% highlight Javascript %}
 module.exports = weatherRoute;
 {% endhighlight %}
 
 <blockquote>
-<i class="fa"></i> Rename the "hello" variables to "weather".  You can use find and replace on "hello" and replace to "weather" This will occur on lines 7,8,9,12,23 and 31:
+<i class="fa fa-desktop"></i> Rename the "hello" variables to "weather".  You can use find and replace on "hello" and replace to "weather" This will occur on lines 7,8,9,12,23 and 31:
 </blockquote>
 <img src="{{ site.baseurl }}/www/4.2/default/screenshots/rhmap-find-hello.png" width="600"/><br/>
 
 <blockquote>
-<i class="fa"></i> On line 12 rename "weather.get" to "weather.all":
+<i class="fa fa-desktop"></i> On line 12 rename "weather.get" to "weather.all":
 </blockquote>
 {% highlight Javascript %}
 weather.all('/', function(req, res) {
@@ -192,18 +192,18 @@ weather.all('/', function(req, res) {
 
 The *all* function we just changed from the *get* function covers both get and post.
 <blockquote>
-<i class="fa"></i> Delete lines 20-29.
+<i class="fa fa-desktop"></i> Delete lines 20-29.
 </blockquote>
 <img src="{{ site.baseurl }}/www/4.2/default/screenshots/rhmap-delete-post.png" width="600"/><br/>
 
 This lab will be using an external weather service.  Since we will no longer need the response from the previous method we can delete that.
 <blockquote>
-<i class="fa"></i> Deleting Lines 13-17 (inclusive)
+<i class="fa fa-desktop"></i> Deleting Lines 13-17 (inclusive)
 </blockquote>
 <img src="{{ site.baseurl }}/www/4.2/default/screenshots/rhmap-delete-body.png" width="600"/><br/>
 
 <blockquote>
-<i class="fa"></i> Paste this line into line 13:
+<i class="fa fa-desktop"></i> Paste this line into line 13:
 </blockquote>
 {% highlight Javascript %}
 //http://api.openweathermap.org/data/2.5/weather?q=washington,united%20states&appid=f6892c041e7d03a3165bbe815ceba731
@@ -213,7 +213,7 @@ This comment contains the appid which is used for this api.  We have created an 
 Since we will be querying outside this mBaaS service we will need to import a new requirement.
 
 <blockquote>
-<i class="fa"></i> Add this line to your requirements at the top of the file(Line 5):
+<i class="fa fa-desktop"></i> Add this line to your requirements at the top of the file(Line 5):
 </blockquote>
 {% highlight Javascript %}
 var request = require('request');
@@ -221,7 +221,7 @@ var request = require('request');
 
 We will now add the request call to get the weather information from the external
 <blockquote>
-<i class="fa"></i> Paste this code over line 12-15 inclusively:
+<i class="fa fa-desktop"></i> Paste this code over line 12-15 inclusively:
 </blockquote>
 {% highlight Javascript %}
   // GET REST endpoint - query params may or may not be populated

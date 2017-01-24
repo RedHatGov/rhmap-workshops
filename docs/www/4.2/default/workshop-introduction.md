@@ -25,7 +25,7 @@ Red Hat Mobile Application Platform or RHMAP provides a web console that allow y
 
 ### Let's Login
 <blockquote>
-<i class="fa"></i>Navigate to the URI provided by your instructor and login with the user/password provided (if there's an icon on the Desktop, just double click that)
+<i class="fa fa-desktop"></i> Navigate to the URI provided by your instructor and login with the user/password provided (if there's an icon on the Desktop, just double click that)
 </blockquote>
 
 <img src="{{ site.baseurl }}/www/4.2/default/screenshots/rhmap-login.png" width="600"/><br/>

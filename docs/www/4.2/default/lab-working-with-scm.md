@@ -135,14 +135,14 @@ Open the file in the editor of your choice.  Notepad, VI, etc.
 We will now add a new *<div>* that will show the received *timestamp*.<br />
 This element acts as a placeholder for the received value.<br />
 <blockquote>
-<i class="fa"></i> Find this line:
+<i class="fa fa-desktop"></i> Find this line:
 </blockquote>
 {% highlight HTML %}
 <div id="cloudResponse" class="cloudResponse"></div>
 {% endhighlight %}
 
 <blockquote>
-<i class="fa"></i> Add a new &lt;div&gt; to get the following:
+<i class="fa fa-desktop"></i> Add a new &lt;div&gt; to get the following:
 </blockquote>
 {% highlight HTML %}
 <div id="cloudResponse" class="cloudResponse"></div>
@@ -157,14 +157,14 @@ This file contains a click handler for the Say Hello From The Cloud button, whic
 Set the placeholder to the received timestamp value.
 
 <blockquote>
-<i class="fa"></i> Find the following code:
+<i class="fa fa-desktop"></i> Find the following code:
 </blockquote>
 {% highlight JavaScript %}
  document.getElementById('cloudResponse').innerHTML = "<p>" + res.msg + "</p>";
 {% endhighlight %}
 
 <blockquote>
-<i class="fa"></i> Replace it with the following:
+<i class="fa fa-desktop"></i> Replace it with the following:
 </blockquote>
 {% highlight JavaScript %}
 document.getElementById('cloudResponse').innerHTML = "<p>" + res.msg + "</p>";
