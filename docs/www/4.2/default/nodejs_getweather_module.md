@@ -12,27 +12,27 @@ The last thing we need to do to complete the mobile application is create the se
 ## Creating a services
 
 <blockquote>
-<i class="fa"></i> Select <b>Services & API's</b> in the studio header.
+<i class="fa fa-desktop"></i> Select <b>Services & API's</b> in the studio header.
 </blockquote>
 <img src="{{ site.baseurl }}/www/4.2/default/screenshots/rhamp-servicesandapis.png" width="600"/><br/>
 This page will list all preexisting mBaaS APIs and allow you to create/modify more.
 <blockquote>
-<i class="fa"></i> Select <b>Provision MBaaS Service/API</b>.
+<i class="fa fa-desktop"></i> Select <b>Provision MBaaS Service/API</b>.
 </blockquote>
 <img src="{{ site.baseurl }}/www/4.2/default/screenshots/rhmap-provisionmbaas.png" width="600"/><br/>
 The following page will list all preexisting services templates that Red Hat provides.  Many common services such as Salesforce, MongoDB and MySQL connectors are there to making connecting to your existing infrastructure easier.  If a service doesn't exist within Red Hat's templates we can create a new one like we will in the lab.
 
 <blockquote>
-<i class="fa"></i>Click <b>Choose</b> inside the <b>New mBaaS Service</b> section.
+<i class="fa fa-desktop"></i> Click <b>Choose</b> inside the <b>New mBaaS Service</b> section.
 </blockquote>
 <img src="{{ site.baseurl }}/www/4.2/default/screenshots/rhmap-mbaaschoose.png" width="600"/><br/>
 <blockquote>
-<i class="fa"></i>Name your service '\<yourname\>\_weatherService' and click <b>Next</b> to proceed.
+<i class="fa fa-desktop"></i> Name your service '\<yourname\>\_weatherService' and click <b>Next</b> to proceed.
 </blockquote>
 <img src="{{ site.baseurl }}/www/4.2/default/screenshots/rhmap-nameservice.png" width="600"/><br/>
 
 <blockquote>
-<i class="fa"></i>Once the bar turns green, click <b>Finish</b> to continue to the service <i>Details</i>.
+<i class="fa fa-desktop"></i> Once the bar turns green, click <b>Finish</b> to continue to the service <i>Details</i>.
 </blockquote>
 4.
 <img src="{{ site.baseurl }}/www/4.2/default/screenshots/rhmap-finishmbaas.png" width="600"/><br/>
@@ -44,29 +44,29 @@ Now that we have created the mBaaS service we need to add the service to our pro
 
 The last step should have navigated you to the details page of the service you created.  If you are not there, navigate to the <i>Details</i> page.
 <blockquote>
-<i class="fa"></i>In the <b>Access Control</b> settings, tick  "Make this Service Public to all Projects and Services" and type your project name into the project field.
+<i class="fa fa-desktop"></i> In the <b>Access Control</b> settings, tick  "Make this Service Public to all Projects and Services" and type your project name into the project field.
 </blockquote>
 <img src="{{ site.baseurl }}/www/4.2/default/screenshots/rhmap-shareservices.png" width="600"/><br/>
 
 <blockquote>
-<i class="fa"></i>Select <b>Save Services</b> and click <b>Confirm</b>.
+<i class="fa fa-desktop"></i> Select <b>Save Services</b> and click <b>Confirm</b>.
 </blockquote>
 This will take you on to the next section of the lab where we will deploy our service.
 
 
 ## Redploying and Cleaning the Stage
 <blockquote>
-<i class="fa"></i>Tick <b>Clean Stage</b>.  This will clear your node.js project and send any new configurations to it.
+<i class="fa fa-desktop"></i> Tick <b>Clean Stage</b>.  This will clear your node.js project and send any new configurations to it.
 </blockquote>
 
 <blockquote>
-<i class="fa"></i>Select your Node.JS runtime.  Any of the runtimes today will work for this lab, but we recommend the newest version of 4.X.X.
+<i class="fa fa-desktop"></i> Select your Node.JS runtime.  Any of the runtimes today will work for this lab, but we recommend the newest version of 4.X.X.
 </blockquote>
 
 You can now select the environment which you would like to deploy this service to.  Since we are still developing this mBaaS service, lets deploy this to *Development*.  This is the default.
 
 <blockquote>
-<i class="fa"></i>Select the <b>Deploy Cloud App</b> button.
+<i class="fa fa-desktop"></i> Select the <b>Deploy Cloud App</b> button.
 </blockquote>
 <img src="{{ site.baseurl }}/www/4.2/default/screenshots/rhmap-service-deployed.png" width="600"/><br/>
 
@@ -240,19 +240,19 @@ $ git push
 Now that we pushed our code back into the platform, we need to build the code.  This is done almost identically to a *cloud app*.  We will have to navigate back to our service.
 
 <blockquote>
-<i class="fa"></i> Click the <b>Services & APIs</b> button in the studio header.
+<i class="fa fa-desktop"></i> Click the <b>Services & APIs</b> button in the studio header.
 </blockquote>
 
 <blockquote>
-<i class="fa"></i> Navigate to the mBaaS service you created.  This will take you to the <i>Details</i> Page.
+<i class="fa fa-desktop"></i> Navigate to the mBaaS service you created.  This will take you to the <i>Details</i> Page.
 </blockquote>
 
 <blockquote>
-<i class="fa"></i> Select <b>Deploy</b> on the left sidebar.
+<i class="fa fa-desktop"></i> Select <b>Deploy</b> on the left sidebar.
 </blockquote>
 
 <blockquote>
-<i class="fa"></i> Make sure <b>Clean Stage</b> is ticked and click <b>Deploy Cloud App</b>
+<i class="fa fa-desktop"></i> Make sure <b>Clean Stage</b> is ticked and click <b>Deploy Cloud App</b>
 </blockquote>
 
 When the progress bar turns green, your service is finishing deploying.

@@ -129,13 +129,13 @@ $ cd <client app name>
 
 
 <blockquote>
-<i class="fa"></i> Navigate to <i>www/index.html</i>
+<i class="fa fa-desktop"></i> Navigate to <i>www/index.html</i>
 </blockquote>
 
 Open the file in the editor of your choice.  Atom, Notepad, VI, etc.
 
 <blockquote>
-<i class="fa"></i> Overwrite <i>index.html</i> with the following code:
+<i class="fa fa-desktop"></i> Overwrite <i>index.html</i> with the following code:
 </blockquote>
 {% highlight HTML %}
 <!doctype html>
@@ -187,19 +187,19 @@ Open the file in the editor of your choice.  Atom, Notepad, VI, etc.
 {% endhighlight %}
 
 <blockquote>
-<i class="fa"></i> Save the file.
+<i class="fa fa-desktop"></i> Save the file.
 </blockquote>
 
 Next we need to rename the hello.js file to weather.js.  We will be renaming www/js/hello.js to www/js/weather.js.
 <blockquote>
-<i class="fa"></i> Type the following:
+<i class="fa fa-desktop"></i> Type the following:
 </blockquote>
 {% highlight csh %}
 $ mv ~/workspace/rhmap-workshops/www/js/hello.js ~/workspace/rhmap-workshops/www/js/weather.js
 {% endhighlight %}
 
 <blockquote>
-<i class="fa"></i> Open the <i>www/js/weather.js</i> file in the editor.
+<i class="fa fa-desktop"></i> Open the <i>www/js/weather.js</i> file in the editor.
 </blockquote>
 
 
@@ -207,7 +207,7 @@ This file contains a click handler for the Say Hello From The Cloud button, whic
 Set the placeholder to the received timestamp value.
 
 <blockquote>
-<i class="fa"></i> Overwrite <i>weather.js</i> with the following code:
+<i class="fa fa-desktop"></i> Overwrite <i>weather.js</i> with the following code:
 </blockquote>
 {% highlight JavaScript %}
 document.getElementById('get_Temp').onclick = function () {
