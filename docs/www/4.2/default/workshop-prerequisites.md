@@ -47,10 +47,6 @@ We will use a few git commands directly in some of the advanced labs.  Please ma
 Note: Windows users will need to install git bash to follow along with these labs
 ```
 
-### Create a Github account
-Create a FREE github account by going [to this link][5] and following their instructions.
-
-
 [1]: http://docs.feedhenry.com/v3/dev_tools/local/install.html
 [2]: https://nodejs.org/en/download/
 [3]: http://brew.sh/
