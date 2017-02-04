@@ -26,15 +26,12 @@ In this section we will be creating a new *project* from an existing template in
 
 2. Click **+New Project**. <img src="{{ site.baseurl }}/www/4.2/default/screenshots/rhmap-newproject.png" width="600"/><br/>
 
-3. Select the "**Xamarin Hello World Project**" by clicking **Choose** on the right side next to it.
-```
-Note: There are to Xamarin projects in this list.  "Xamarin Hello World Project and Native Xamarin Hello World Project".  Select "Xamarin Hello World Project".
-```
+3. Select the "**Hello World Project**" by clicking **Choose** on the right side next to it.
 
 4. Enter a name for the project.
 
 5. Click **Create**.
-<br/><img src="{{ site.baseurl }}/www/4.2/default/screenshots/rhmap-xamarin-newproject.png" width="600"/><br/>
+<br/><img src="{{ site.baseurl }}/www/4.2/default/screenshots/rhmap-helloworld-newproject.png" width="600"/><br/>
 
 6. When the progress bar turns green the project is successfully created. Click **Finish**.
 
@@ -45,7 +42,7 @@ After creating a project, you can see the project page. This shows the client ap
 * Cloud Code Apps: applications deployed in the mBaaS that handle requests from client apps and communicate with other internal or external systems.
 * mBaaS Services: reusable services used by cloud code apps and shared across multiple projects.
 
-The newly created Hello World Project contains one Xamarin client app and one cloud code app with a single HTTP endpoint. You can add more client apps, cloud code apps, and mBaaS services to the project by clicking the **+** in each column.
+The newly created Hello World Project contains one Cordova client app and one cloud code app with a single HTTP endpoint. You can add more client apps, cloud code apps, and mBaaS services to the project by clicking the **+** in each column.
 
 ## Deploying the Cloud Code App
 
@@ -64,19 +61,6 @@ Depending on settings within the platform the cloud code app may need to be manu
 5. Click the **Details** button on the left sidebar.
 
 6. Confirm that your **Cloud App Status** is *running*.  If the app is not started confirm your app successfully deployed on the previous page and then click **Start App** on the *Details* page.
-
-## Creating a Client App
-For this part of the lab we will create a Cordova application to easily walk through the process within the browser. Apache Cordova enables developers to build applications for mobile devices using CSS3, HTML5, and JavaScript.
-
-1. Navigate to **Apps, Cloud Apps & Services**.
-
-2. Select **+** at the top of the **Client App** Column.
-
-3. Select **Create New App**.
-
-4. Click **Choose** on the **Cordova App**.
-
-5. Name your new Cordova app *Cordova Hello World* and select **Create Client App**.
 
 ## Exploring the Client App
 

@@ -1,6 +1,6 @@
 ---
 layout: lab
-title: Modifying a Cloud App & Node.JS
+title: 5. Modifying a Cloud App & Node.JS
 subtitle: Understanding how cloud apps work
 html_title: Modifying a Cloud App & Node.JS
 categories: [lab, intro, welcome, developers, ops]
@@ -40,21 +40,21 @@ Open *lib/hello.js*.
 
 Add a timestamp to the response object. <br/>
 <blockquote>
-<i class="fa"></i> Find this line(17 & 28):
+<i class="fa fa-desktop"></i> Find this line(17 & 28):
 </blockquote>
 {% highlight JavaScript %}
 res.json({msg: 'Hello ' + world});
 {% endhighlight %}
 
 <blockquote>
-<i class="fa"></i> Change that line to the following:
+<i class="fa fa-desktop"></i> Change that line to the following:
 </blockquote>
 {% highlight JavaScript %}
 res.json({msg: 'Hello ' + world, timestamp: new Date().getTime() });
 {% endhighlight %}
 
 <blockquote>
-<i class="fa"></i> The GET handler should now look like:
+<i class="fa fa-desktop"></i> The GET handler should now look like:
 </blockquote>
 {% highlight JavaScript %}
 hello.get('/', function(req, res) {
@@ -66,7 +66,7 @@ hello.get('/', function(req, res) {
 {% endhighlight %}
 
 <blockquote>
-<i class="fa"></i> The POST handler should now look like:
+<i class="fa fa-desktop"></i> The POST handler should now look like:
 </blockquote>
 {% highlight JavaScript %}
 hello.post('/', function(req, res) {
@@ -78,7 +78,7 @@ hello.post('/', function(req, res) {
 {% endhighlight %}
 
 <blockquote>
-<i class="fa"></i> Your full file should read as follows:
+<i class="fa fa-desktop"></i> Your full file should read as follows:
 </blockquote>
 {% highlight JavaScript %}
 

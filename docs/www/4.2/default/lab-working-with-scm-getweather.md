@@ -128,49 +128,124 @@ $ cd <client app name>
 {% endhighlight %}
 
 
-Navigate to *www/index.html*
-
-Open the file in the editor of your choice.  Notepad, VI, etc.
-
-We will now add a new *<div>* that will show the received *timestamp*.<br />
-This element acts as a placeholder for the received value.<br />
 <blockquote>
-<i class="fa fa-desktop"></i> Find this line:
+<i class="fa fa-desktop"></i> Navigate to <i>www/index.html</i>
+</blockquote>
+
+Open the file in the editor of your choice.  Atom, Notepad, VI, etc.
+
+<blockquote>
+<i class="fa fa-desktop"></i> Overwrite <i>index.html</i> with the following code:
 </blockquote>
 {% highlight HTML %}
-<div id="cloudResponse" class="cloudResponse"></div>
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <title>MyWeather</title>
+
+    <link rel="stylesheet" href="css/app.css">
+    <script src="cordova.js" type="text/javascript"></script>
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'" />
+</head>
+
+<body>
+<header class="header-footer-bg">
+    <div class="center">
+        <h3>Red Hat Mobile
+            <small>Cordova - getWeather</small>
+        </h3>
+    </div>
+</header>
+
+<div id="count" class="">
+    <div id="formWrapper">
+        <p id="description">This is a basic Cordova App that can take in your geolocation and send it to a cloud app.
+          The cloud app will query the mMaaS which will reach out to the api and modify the results of the call. It will then send it back to the device and display the response.
+          The response is the current temperature at your location in fahrenheit.</p>
+        <br>
+
+        <button id="get_Temp" type="button" class="say-hello-button">Get the current temperature</button>
+        <div id="cloudResponse" class="cloudResponse"></div>
+    </div>
+</div>
+
+<footer class="header-footer-bg">
+    <div>
+        <small class="right">
+            <!-- v.&nbsp;{{ version }} -->
+        </small>
+    </div>
+</footer>
+
+<script src="main.js"></script>
+<script src="js/weather.js"></script>
+</body>
+</html>
 {% endhighlight %}
 
 <blockquote>
-<i class="fa fa-desktop"></i> Add a new &lt;div&gt; to get the following:
+<i class="fa fa-desktop"></i> Save the file.
 </blockquote>
-{% highlight HTML %}
-<div id="cloudResponse" class="cloudResponse"></div>
-<div id="timestamp" class="cloudResponse"></div>
+
+Next we need to rename the hello.js file to weather.js.  We will be renaming www/js/hello.js to www/js/weather.js.
+<blockquote>
+<i class="fa fa-desktop"></i> Type the following:
+</blockquote>
+{% highlight csh %}
+$ mv ~/workspace/rhmap-workshops/www/js/hello.js ~/workspace/rhmap-workshops/www/js/weather.js
 {% endhighlight %}
 
-Save the file.
+<blockquote>
+<i class="fa fa-desktop"></i> Open the <i>www/js/weather.js</i> file in the editor.
+</blockquote>
 
-Open the *www/js/hello.js* file in the editor.
 
 This file contains a click handler for the Say Hello From The Cloud button, which uses the $fh.cloud API to call the /hello endpoint of the cloud app and populates the placeholder <div id="timestamp"> element.
 Set the placeholder to the received timestamp value.
 
 <blockquote>
-<i class="fa fa-desktop"></i> Find the following code:
+<i class="fa fa-desktop"></i> Overwrite <i>weather.js</i> with the following code:
 </blockquote>
 {% highlight JavaScript %}
- document.getElementById('cloudResponse').innerHTML = "<p>" + res.msg + "</p>";
+document.getElementById('get_Temp').onclick = function () {
+  function getPosition() {
+    var options = {
+      enableHighAccuracy: true,
+      maximumAge: 3600000
+    };
+    function onSuccess(position) {
+      $fh.cloud({
+        path: 'currentWeather',
+        data: {
+          lat: position.coords.latitude,
+          lon: position.coords.longitude
+        }
+      },
+      function (res) {
+        document.getElementById('cloudResponse').innerHTML = "<p>" + res.msg + "</p>";
+      },
+      function (code, errorprops, params) {
+        alert('An error occured: ' + code + ' : ' + errorprops);
+      });
+    };
+    function onError(error) {
+      alert('code: '    + error.code    + '\n' + 'message: ' + error.message + '\n');
+    };
+    var watchID = navigator.geolocation.getCurrentPosition(onSuccess, onError, options);
+  };
+
+  getPosition();
+  document.getElementById('cloudResponse').innerHTML = "<p>Calling Cloud.....</p>";
+};
+
 {% endhighlight %}
 
-<blockquote>
-<i class="fa fa-desktop"></i> Replace it with the following:
-</blockquote>
-{% highlight JavaScript %}
-document.getElementById('cloudResponse').innerHTML = "<p>" + res.msg + "</p>";
-document.getElementById('timestamp').innerHTML = "<p>" + res.timestamp + "</p>";
-{% endhighlight %}
-Save your changes.
+<img src="{{ site.baseurl }}/www/4.2/default/screenshots/rhmap-getweather-client-line1.png" width="600"/><br/>
+<img src="{{ site.baseurl }}/www/4.2/default/screenshots/rhmap-getweather-client-line8.png" width="600"/><br/>
+<img src="{{ site.baseurl }}/www/4.2/default/screenshots/rhmap-getweather-client-line25.png" width="600"/><br/>
 
 
 ## Pushing the code back to the platform.

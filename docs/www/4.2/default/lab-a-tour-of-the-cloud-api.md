@@ -1,8 +1,8 @@
 ---
 layout: lab
-title: A Brief Tour of the Cloud API
-subtitle: 
-html_title: A brief tour of the cloud API
+title: 5.1 Introduction to Cloud App APIs
+subtitle: A Brief Tour of the Cloud API
+html_title: A Brief Tour of the Cloud API
 categories: [lab, developers, api, cloud]
 ---
 
@@ -32,7 +32,7 @@ One of the most useful cloud APIs calls is fh.db.  It provides easy access to pe
 $fh.db(options, callback);
 {% endhighlight %}
 
-Using the fh.db API call you can Create, Read, Update, and Delete data in a hosted cloud database.  Additionally, there is advanced capability to do List operations on the data in the database.  Using *List* as the act type you can leverage filtering and pagination.  For example: List only data that matches within a specific geographic bounding circle. 
+Using the fh.db API call you can Create, Read, Update, and Delete data in a hosted cloud database.  Additionally, there is advanced capability to do List operations on the data in the database.  Using *List* as the act type you can leverage filtering and pagination.  For example: List only data that matches within a specific geographic bounding circle.
 
 Here is an example of creating multiple records with a single API call:
 
@@ -116,5 +116,3 @@ You should now have a basic understanding of what Cloud API calls are available 
 [2]: https://access.redhat.com/documentation/en/red-hat-mobile-application-platform/4.2/single/product-features/#sending-notifications
 [3]: https://access.redhat.com/documentation/en/red-hat-mobile-application-platform/4.2/paged/client-api/
 [4]: ./lab-a-tour-of-the-client-api.md
-
-
