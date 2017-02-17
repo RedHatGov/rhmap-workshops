@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
     <link href="http://overpass-30e2.kxcdn.com/overpass.css" rel="stylesheet" />
+
+    <script src="javascripts/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="
+    stylesheets/bootstrap-3.3.6.min.css"/>
+    <script type="text/javascript" src="javascripts/main.js"></script>
+
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
@@ -36,11 +42,24 @@
 
           <p>Try out the Red Hat Mobile Application Platform with these workshops.</p>
 
-          <h3><a id="access-workshop" class="anchor" href="www/4.2/default/workshop-index.html" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span>Access the instructor-led workshop content here</a></h3>
-          <h3><a id="access-workshop" class="anchor" href="www/4.2/instructor/workshop-index.html" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span>Access the instructor documentation here</a></h3>
+          <div>
+            <label for="version">Select from below:</label>
+            <select name="version" id="version-selector">
+              <option value="4.2">4.2 Workshops</option>
+              <option value="instructor">Instructor Docs</option>
+            </select>
+          </div>
 
+          <div id="42links">
+            <a id="access-workshop" class="anchor" href="www/4.2/default/workshop-index.html" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span>Access the instructor-led 4.2 workshop content here</a>
+            <br/>
+            <span aria-hidden="true" class="octicon octicon-link"></span>COMING SOON... Access the self-paced 4.2 workshop content here</p>
 
-          <h3><span aria-hidden="true" class="octicon octicon-link"></span>COMING SOON... Access the self-paced online workshop content here</p></h3>
+          </div>
+
+          <div id="instructorlinks" class="hidden">
+            <a id="access-workshop" class="anchor" href="www/4.2/instructor/workshop-index.html" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span>Access the instructor documentation here</a>
+          </div>
 
 
         <h3>
@@ -84,8 +103,7 @@
             .tar.gz file
           </a>
 
-          <p class="repo-owner"><a href="https://github.com/dudash/rhmap-workshops"></a> is maintained by <a href="https://github.com/dudash">dudash</a>.</p>
-
+          <p></p>
         </aside>
       </div>
     </div>

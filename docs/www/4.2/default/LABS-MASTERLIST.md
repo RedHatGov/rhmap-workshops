@@ -20,6 +20,9 @@ Create a copy of this or customize to tailor a workshop to your audience
 ## workshop-lab-prerequisites.md
 How to install the prerequisites
 
+## workshop-introduction.md
+Login and Tour of Red Hat Mobile Application Platform
+
 ## a-tour-of-the-webconsole-xamarin.md
 Basics of the RHMAP webconsole.
 
